@@ -1,0 +1,8 @@
+/* 全局样式表 */
+/* 让html,body,app三个容器高度都为100，内外边距为0 */
+html,body,#app {
+    height: 100%;
+    margin:0;
+    padding:0;
+
+}
