@@ -3,6 +3,8 @@ import Router from 'vue-router'
 //引入组件
 import Login from '../views/Login/index'
 import Home from '../views/Home/index'
+import Welcome from '../views/Welcome'
+import Users from '../views/Users'
 
 //创建并暴露一个路由器
 const router =  new Router({
@@ -17,7 +19,20 @@ const router =  new Router({
         },
         {
             path:'/home',
-            component: Home
+            component: Home,
+            //只要访问/home地址就让其重定向到/welcome组件
+            redirect:'/welcome',
+            children:[
+                {
+                    path:'/welcome',
+                    component: Welcome
+                },
+                {
+                    path:'/users',
+                    component: Users
+                }
+            ],
+            
         }
 ]
 })
