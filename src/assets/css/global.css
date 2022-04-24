@@ -4,6 +4,8 @@ html,body,#app {
     height: 100%;
     margin:0;
     padding:0;
+    /* 最小屏幕宽度 */
+    min-width: 1366px;
 
 }
 /* 面包屑写个全局样式使其与卡片之间有一定的间隔以及设置字体大小 */

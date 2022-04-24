@@ -5,6 +5,8 @@ import Login from '../views/Login/index'
 import Home from '../views/Home/index'
 import Welcome from '../views/Welcome'
 import Users from '../views/Users'
+import Power from '../views/Power'
+import Roles from '../views/Roles'
 
 //创建并暴露一个路由器
 const router =  new Router({
@@ -30,6 +32,14 @@ const router =  new Router({
                 {
                     path:'/users',
                     component: Users
+                },
+                {
+                    path:'/rights',
+                    component: Power
+                },
+                {
+                    path:'/roles',
+                    component: Roles
                 }
             ],
             

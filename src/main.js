@@ -9,7 +9,7 @@ import './assets/css/global.css'
 //按需引入
 import {Form,FormItem,Input,Button,Container,Header,Aside,Main,Menu,Submenu,MenuItemGroup,
   MenuItem,Breadcrumb,BreadcrumbItem,Card,Row,Col,Table,TableColumn,Switch,Tooltip,Pagination,Dialog,
-MessageBox} from 'element-ui'
+  MessageBox,Tag,Tree,Select,Option} from 'element-ui'
 
 //导入弹框提示组件需要在组件原型实例上挂载
 import {Message} from 'element-ui'
@@ -66,6 +66,10 @@ Vue.use(Switch)
 Vue.use(Tooltip)
 Vue.use(Pagination)
 Vue.use(Dialog)
+Vue.use(Tag)
+Vue.use(Tree)
+Vue.use(Select)
+Vue.use(Option)
 
 Vue.prototype.$message = Message
 //全局挂载MessageBOX
