@@ -7,6 +7,7 @@ import Welcome from '../views/Welcome'
 import Users from '../views/Users'
 import Power from '../views/Power'
 import Roles from '../views/Roles'
+import Goods from '../views/Goods'
 
 //创建并暴露一个路由器
 const router =  new Router({
@@ -40,6 +41,10 @@ const router =  new Router({
                 {
                     path:'/roles',
                     component: Roles
+                },
+                {
+                    path:'/categories',
+                    component: Goods
                 }
             ],
             
